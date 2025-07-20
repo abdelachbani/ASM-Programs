@@ -21,5 +21,5 @@ exit:          div     $5,         $4
     la      $2,         result
     sh      $5,         0($2) # Store integer average
     mfhi    $5
-    sh      $5,         2($2) # Store fractional average
+    sh      $5,         2($2) # Store fractional average as an integer x modulo n (x%n), being n the count of values excluding the 0.
 end:        .end
